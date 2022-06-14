@@ -1,0 +1,255 @@
+/*
+ *  CMSIS Pack Debug Access Sequence Log
+ *  File        : E:\stm32\STM32F401\Code\STM32F401_HAL_PRO\34424\STM32F401_HAL_PRO\MDK-ARM\STM32F401_HAL_PRO_Sequences_0007.log
+ *  Created     : 19:02:25 (27/05/2022)
+ *  Device      : STM32F401CEUx
+ *  PDSC File   : E:\stm32\STM32 PACK\Keil\STM32F4xx_DFP\2.7.0\Keil.STM32F4xx_DFP.pdsc
+ *  Config File : E:\stm32\STM32F401\Code\STM32F401_HAL_PRO\34424\STM32F401_HAL_PRO\MDK-ARM\DebugConfig\STM32F401_HAL_PRO_STM32F401CEUx.dbgconf
+ *
+ */
+
+[19:02:25.041]  **********  Sequence "DebugCoreStart"  (Context="Connect", Pname="", info="")
+[19:02:25.041]  
+[19:02:25.041]  <debugvars>
+[19:02:25.041]    // Pre-defined
+[19:02:25.041]    __protocol=0x00010002      (Protocol="SWD", SWJ-DP="True")
+[19:02:25.041]    __connection=0x00010202    (Connection Type="Flash", Reset Type="System Reset", Connection Under HW Reset)
+[19:02:25.041]    __dp=0x00000000
+[19:02:25.041]    __ap=0x00000000
+[19:02:25.041]    __traceout=0x00000000      (Trace Disabled)
+[19:02:25.047]    __errorcontrol=0x00000000  (Skip Errors="False")
+[19:02:25.047]    __FlashAddr=0x00000000
+[19:02:25.047]    __FlashLen=0x00000000
+[19:02:25.047]    __FlashArg=0x00000000
+[19:02:25.047]    __FlashOp=0x00000000
+[19:02:25.047]    __Result=0x00000000
+[19:02:25.047]    
+[19:02:25.047]    // User-defined
+[19:02:25.047]    DbgMCU_CR=0x00000007
+[19:02:25.047]    DbgMCU_APB1_Fz=0x00000000
+[19:02:25.047]    DbgMCU_APB2_Fz=0x00000000
+[19:02:25.047]  </debugvars>
+[19:02:25.047]  
+[19:02:25.047]  <sequence name="DebugCoreStart" Pname="" disable="false" info="">
+[19:02:25.047]    <block atomic="false" info="">
+[19:02:25.047]      Write32(0xE000EDF0, 0xA05F0001);                                        // Enable Core Debug via DHCSR
+[19:02:25.047]        // -> [Write32(0xE000EDF0, 0xA05F0001)]   (__dp=0x00000000, __ap=0x00000000)
+[19:02:25.047]      Write32(0xE0042004, DbgMCU_CR);                                         // DBGMCU_CR: Configure MCU Debug
+[19:02:25.047]        // -> [Write32(0xE0042004, 0x00000007)]   (__dp=0x00000000, __ap=0x00000000)
+[19:02:25.047]      Write32(0xE0042008, DbgMCU_APB1_Fz);                                    // DBGMCU_APB1_FZ: Configure APB1 Peripheral Freeze Behavior
+[19:02:25.047]        // -> [Write32(0xE0042008, 0x00000000)]   (__dp=0x00000000, __ap=0x00000000)
+[19:02:25.047]      Write32(0xE004200C, DbgMCU_APB2_Fz);                                    // DBGMCU_APB1_FZ: Configure APB2 Peripheral Freeze Behavior
+[19:02:25.047]        // -> [Write32(0xE004200C, 0x00000000)]   (__dp=0x00000000, __ap=0x00000000)
+[19:02:25.047]    </block>
+[19:02:25.047]  </sequence>
+[19:02:25.047]  
+[19:03:17.258]  **********  Sequence "DebugCoreStart"  (Context="Connect", Pname="", info="")
+[19:03:17.258]  
+[19:03:17.263]  <debugvars>
+[19:03:17.263]    // Pre-defined
+[19:03:17.263]    __protocol=0x00010002      (Protocol="SWD", SWJ-DP="True")
+[19:03:17.263]    __connection=0x00010202    (Connection Type="Flash", Reset Type="System Reset", Connection Under HW Reset)
+[19:03:17.263]    __dp=0x00000000
+[19:03:17.263]    __ap=0x00000000
+[19:03:17.266]    __traceout=0x00000000      (Trace Disabled)
+[19:03:17.266]    __errorcontrol=0x00000000  (Skip Errors="False")
+[19:03:17.266]    __FlashAddr=0x00000000
+[19:03:17.266]    __FlashLen=0x00000000
+[19:03:17.266]    __FlashArg=0x00000000
+[19:03:17.266]    __FlashOp=0x00000000
+[19:03:17.266]    __Result=0x00000000
+[19:03:17.266]    
+[19:03:17.266]    // User-defined
+[19:03:17.266]    DbgMCU_CR=0x00000007
+[19:03:17.268]    DbgMCU_APB1_Fz=0x00000000
+[19:03:17.268]    DbgMCU_APB2_Fz=0x00000000
+[19:03:17.268]  </debugvars>
+[19:03:17.268]  
+[19:03:17.268]  <sequence name="DebugCoreStart" Pname="" disable="false" info="">
+[19:03:17.268]    <block atomic="false" info="">
+[19:03:17.268]      Write32(0xE000EDF0, 0xA05F0001);                                        // Enable Core Debug via DHCSR
+[19:03:17.268]        // -> [Write32(0xE000EDF0, 0xA05F0001)]   (__dp=0x00000000, __ap=0x00000000)
+[19:03:17.268]      Write32(0xE0042004, DbgMCU_CR);                                         // DBGMCU_CR: Configure MCU Debug
+[19:03:17.268]        // -> [Write32(0xE0042004, 0x00000007)]   (__dp=0x00000000, __ap=0x00000000)
+[19:03:17.268]      Write32(0xE0042008, DbgMCU_APB1_Fz);                                    // DBGMCU_APB1_FZ: Configure APB1 Peripheral Freeze Behavior
+[19:03:17.268]        // -> [Write32(0xE0042008, 0x00000000)]   (__dp=0x00000000, __ap=0x00000000)
+[19:03:17.268]      Write32(0xE004200C, DbgMCU_APB2_Fz);                                    // DBGMCU_APB1_FZ: Configure APB2 Peripheral Freeze Behavior
+[19:03:17.268]        // -> [Write32(0xE004200C, 0x00000000)]   (__dp=0x00000000, __ap=0x00000000)
+[19:03:17.268]    </block>
+[19:03:17.268]  </sequence>
+[19:03:17.268]  
+[19:05:06.631]  **********  Sequence "DebugCoreStart"  (Context="Connect", Pname="", info="")
+[19:05:06.631]  
+[19:05:06.639]  <debugvars>
+[19:05:06.639]    // Pre-defined
+[19:05:06.640]    __protocol=0x00010002      (Protocol="SWD", SWJ-DP="True")
+[19:05:06.640]    __connection=0x00010201    (Connection Type="Debug", Reset Type="System Reset", Connection Under HW Reset)
+[19:05:06.640]    __dp=0x00000000
+[19:05:06.640]    __ap=0x00000000
+[19:05:06.640]    __traceout=0x00000000      (Trace Disabled)
+[19:05:06.640]    __errorcontrol=0x00000000  (Skip Errors="False")
+[19:05:06.640]    __FlashAddr=0x00000000
+[19:05:06.640]    __FlashLen=0x00000000
+[19:05:06.640]    __FlashArg=0x00000000
+[19:05:06.640]    __FlashOp=0x00000000
+[19:05:06.640]    __Result=0x00000000
+[19:05:06.640]    
+[19:05:06.640]    // User-defined
+[19:05:06.640]    DbgMCU_CR=0x00000007
+[19:05:06.640]    DbgMCU_APB1_Fz=0x00000000
+[19:05:06.640]    DbgMCU_APB2_Fz=0x00000000
+[19:05:06.640]  </debugvars>
+[19:05:06.640]  
+[19:05:06.640]  <sequence name="DebugCoreStart" Pname="" disable="false" info="">
+[19:05:06.640]    <block atomic="false" info="">
+[19:05:06.640]      Write32(0xE000EDF0, 0xA05F0001);                                        // Enable Core Debug via DHCSR
+[19:05:06.640]        // -> [Write32(0xE000EDF0, 0xA05F0001)]   (__dp=0x00000000, __ap=0x00000000)
+[19:05:06.640]      Write32(0xE0042004, DbgMCU_CR);                                         // DBGMCU_CR: Configure MCU Debug
+[19:05:06.640]        // -> [Write32(0xE0042004, 0x00000007)]   (__dp=0x00000000, __ap=0x00000000)
+[19:05:06.640]      Write32(0xE0042008, DbgMCU_APB1_Fz);                                    // DBGMCU_APB1_FZ: Configure APB1 Peripheral Freeze Behavior
+[19:05:06.640]        // -> [Write32(0xE0042008, 0x00000000)]   (__dp=0x00000000, __ap=0x00000000)
+[19:05:06.640]      Write32(0xE004200C, DbgMCU_APB2_Fz);                                    // DBGMCU_APB1_FZ: Configure APB2 Peripheral Freeze Behavior
+[19:05:06.640]        // -> [Write32(0xE004200C, 0x00000000)]   (__dp=0x00000000, __ap=0x00000000)
+[19:05:06.640]    </block>
+[19:05:06.656]  </sequence>
+[19:05:06.656]  
+[19:05:32.053]  **********  Sequence "DebugCoreStart"  (Context="Connect", Pname="", info="")
+[19:05:32.053]  
+[19:05:32.062]  <debugvars>
+[19:05:32.062]    // Pre-defined
+[19:05:32.062]    __protocol=0x00010002      (Protocol="SWD", SWJ-DP="True")
+[19:05:32.062]    __connection=0x00010202    (Connection Type="Flash", Reset Type="System Reset", Connection Under HW Reset)
+[19:05:32.062]    __dp=0x00000000
+[19:05:32.062]    __ap=0x00000000
+[19:05:32.062]    __traceout=0x00000000      (Trace Disabled)
+[19:05:32.062]    __errorcontrol=0x00000000  (Skip Errors="False")
+[19:05:32.062]    __FlashAddr=0x00000000
+[19:05:32.062]    __FlashLen=0x00000000
+[19:05:32.062]    __FlashArg=0x00000000
+[19:05:32.062]    __FlashOp=0x00000000
+[19:05:32.062]    __Result=0x00000000
+[19:05:32.062]    
+[19:05:32.062]    // User-defined
+[19:05:32.062]    DbgMCU_CR=0x00000007
+[19:05:32.062]    DbgMCU_APB1_Fz=0x00000000
+[19:05:32.062]    DbgMCU_APB2_Fz=0x00000000
+[19:05:32.062]  </debugvars>
+[19:05:32.062]  
+[19:05:32.062]  <sequence name="DebugCoreStart" Pname="" disable="false" info="">
+[19:05:32.068]    <block atomic="false" info="">
+[19:05:32.068]      Write32(0xE000EDF0, 0xA05F0001);                                        // Enable Core Debug via DHCSR
+[19:05:32.068]        // -> [Write32(0xE000EDF0, 0xA05F0001)]   (__dp=0x00000000, __ap=0x00000000)
+[19:05:32.068]      Write32(0xE0042004, DbgMCU_CR);                                         // DBGMCU_CR: Configure MCU Debug
+[19:05:32.068]        // -> [Write32(0xE0042004, 0x00000007)]   (__dp=0x00000000, __ap=0x00000000)
+[19:05:32.068]      Write32(0xE0042008, DbgMCU_APB1_Fz);                                    // DBGMCU_APB1_FZ: Configure APB1 Peripheral Freeze Behavior
+[19:05:32.068]        // -> [Write32(0xE0042008, 0x00000000)]   (__dp=0x00000000, __ap=0x00000000)
+[19:05:32.068]      Write32(0xE004200C, DbgMCU_APB2_Fz);                                    // DBGMCU_APB1_FZ: Configure APB2 Peripheral Freeze Behavior
+[19:05:32.068]        // -> [Write32(0xE004200C, 0x00000000)]   (__dp=0x00000000, __ap=0x00000000)
+[19:05:32.068]    </block>
+[19:05:32.068]  </sequence>
+[19:05:32.068]  
+[19:05:37.782]  **********  Sequence "DebugCoreStart"  (Context="Connect", Pname="", info="")
+[19:05:37.782]  
+[19:05:37.783]  <debugvars>
+[19:05:37.783]    // Pre-defined
+[19:05:37.783]    __protocol=0x00010002      (Protocol="SWD", SWJ-DP="True")
+[19:05:37.783]    __connection=0x00010201    (Connection Type="Debug", Reset Type="System Reset", Connection Under HW Reset)
+[19:05:37.783]    __dp=0x00000000
+[19:05:37.783]    __ap=0x00000000
+[19:05:37.783]    __traceout=0x00000000      (Trace Disabled)
+[19:05:37.783]    __errorcontrol=0x00000000  (Skip Errors="False")
+[19:05:37.783]    __FlashAddr=0x00000000
+[19:05:37.783]    __FlashLen=0x00000000
+[19:05:37.783]    __FlashArg=0x00000000
+[19:05:37.783]    __FlashOp=0x00000000
+[19:05:37.783]    __Result=0x00000000
+[19:05:37.783]    
+[19:05:37.783]    // User-defined
+[19:05:37.783]    DbgMCU_CR=0x00000007
+[19:05:37.783]    DbgMCU_APB1_Fz=0x00000000
+[19:05:37.783]    DbgMCU_APB2_Fz=0x00000000
+[19:05:37.783]  </debugvars>
+[19:05:37.783]  
+[19:05:37.783]  <sequence name="DebugCoreStart" Pname="" disable="false" info="">
+[19:05:37.783]    <block atomic="false" info="">
+[19:05:37.783]      Write32(0xE000EDF0, 0xA05F0001);                                        // Enable Core Debug via DHCSR
+[19:05:37.783]        // -> [Write32(0xE000EDF0, 0xA05F0001)]   (__dp=0x00000000, __ap=0x00000000)
+[19:05:37.783]      Write32(0xE0042004, DbgMCU_CR);                                         // DBGMCU_CR: Configure MCU Debug
+[19:05:37.783]        // -> [Write32(0xE0042004, 0x00000007)]   (__dp=0x00000000, __ap=0x00000000)
+[19:05:37.783]      Write32(0xE0042008, DbgMCU_APB1_Fz);                                    // DBGMCU_APB1_FZ: Configure APB1 Peripheral Freeze Behavior
+[19:05:37.783]        // -> [Write32(0xE0042008, 0x00000000)]   (__dp=0x00000000, __ap=0x00000000)
+[19:05:37.783]      Write32(0xE004200C, DbgMCU_APB2_Fz);                                    // DBGMCU_APB1_FZ: Configure APB2 Peripheral Freeze Behavior
+[19:05:37.783]        // -> [Write32(0xE004200C, 0x00000000)]   (__dp=0x00000000, __ap=0x00000000)
+[19:05:37.783]    </block>
+[19:05:37.783]  </sequence>
+[19:05:37.783]  
+[19:08:20.930]  **********  Sequence "DebugCoreStart"  (Context="Connect", Pname="", info="")
+[19:08:20.930]  
+[19:08:20.937]  <debugvars>
+[19:08:20.937]    // Pre-defined
+[19:08:20.937]    __protocol=0x00010002      (Protocol="SWD", SWJ-DP="True")
+[19:08:20.937]    __connection=0x00010202    (Connection Type="Flash", Reset Type="System Reset", Connection Under HW Reset)
+[19:08:20.937]    __dp=0x00000000
+[19:08:20.937]    __ap=0x00000000
+[19:08:20.937]    __traceout=0x00000000      (Trace Disabled)
+[19:08:20.937]    __errorcontrol=0x00000000  (Skip Errors="False")
+[19:08:20.937]    __FlashAddr=0x00000000
+[19:08:20.937]    __FlashLen=0x00000000
+[19:08:20.937]    __FlashArg=0x00000000
+[19:08:20.937]    __FlashOp=0x00000000
+[19:08:20.937]    __Result=0x00000000
+[19:08:20.946]    
+[19:08:20.946]    // User-defined
+[19:08:20.946]    DbgMCU_CR=0x00000007
+[19:08:20.946]    DbgMCU_APB1_Fz=0x00000000
+[19:08:20.946]    DbgMCU_APB2_Fz=0x00000000
+[19:08:20.946]  </debugvars>
+[19:08:20.946]  
+[19:08:20.946]  <sequence name="DebugCoreStart" Pname="" disable="false" info="">
+[19:08:20.946]    <block atomic="false" info="">
+[19:08:20.946]      Write32(0xE000EDF0, 0xA05F0001);                                        // Enable Core Debug via DHCSR
+[19:08:20.946]        // -> [Write32(0xE000EDF0, 0xA05F0001)]   (__dp=0x00000000, __ap=0x00000000)
+[19:08:20.946]      Write32(0xE0042004, DbgMCU_CR);                                         // DBGMCU_CR: Configure MCU Debug
+[19:08:20.946]        // -> [Write32(0xE0042004, 0x00000007)]   (__dp=0x00000000, __ap=0x00000000)
+[19:08:20.946]      Write32(0xE0042008, DbgMCU_APB1_Fz);                                    // DBGMCU_APB1_FZ: Configure APB1 Peripheral Freeze Behavior
+[19:08:20.946]        // -> [Write32(0xE0042008, 0x00000000)]   (__dp=0x00000000, __ap=0x00000000)
+[19:08:20.946]      Write32(0xE004200C, DbgMCU_APB2_Fz);                                    // DBGMCU_APB1_FZ: Configure APB2 Peripheral Freeze Behavior
+[19:08:20.946]        // -> [Write32(0xE004200C, 0x00000000)]   (__dp=0x00000000, __ap=0x00000000)
+[19:08:20.946]    </block>
+[19:08:20.946]  </sequence>
+[19:08:20.946]  
+[19:09:16.444]  **********  Sequence "DebugCoreStart"  (Context="Connect", Pname="", info="")
+[19:09:16.444]  
+[19:09:16.454]  <debugvars>
+[19:09:16.454]    // Pre-defined
+[19:09:16.455]    __protocol=0x00010002      (Protocol="SWD", SWJ-DP="True")
+[19:09:16.455]    __connection=0x00010202    (Connection Type="Flash", Reset Type="System Reset", Connection Under HW Reset)
+[19:09:16.455]    __dp=0x00000000
+[19:09:16.455]    __ap=0x00000000
+[19:09:16.455]    __traceout=0x00000000      (Trace Disabled)
+[19:09:16.455]    __errorcontrol=0x00000000  (Skip Errors="False")
+[19:09:16.455]    __FlashAddr=0x00000000
+[19:09:16.455]    __FlashLen=0x00000000
+[19:09:16.455]    __FlashArg=0x00000000
+[19:09:16.455]    __FlashOp=0x00000000
+[19:09:16.455]    __Result=0x00000000
+[19:09:16.455]    
+[19:09:16.455]    // User-defined
+[19:09:16.455]    DbgMCU_CR=0x00000007
+[19:09:16.455]    DbgMCU_APB1_Fz=0x00000000
+[19:09:16.455]    DbgMCU_APB2_Fz=0x00000000
+[19:09:16.455]  </debugvars>
+[19:09:16.455]  
+[19:09:16.455]  <sequence name="DebugCoreStart" Pname="" disable="false" info="">
+[19:09:16.455]    <block atomic="false" info="">
+[19:09:16.455]      Write32(0xE000EDF0, 0xA05F0001);                                        // Enable Core Debug via DHCSR
+[19:09:16.455]        // -> [Write32(0xE000EDF0, 0xA05F0001)]   (__dp=0x00000000, __ap=0x00000000)
+[19:09:16.455]      Write32(0xE0042004, DbgMCU_CR);                                         // DBGMCU_CR: Configure MCU Debug
+[19:09:16.455]        // -> [Write32(0xE0042004, 0x00000007)]   (__dp=0x00000000, __ap=0x00000000)
+[19:09:16.455]      Write32(0xE0042008, DbgMCU_APB1_Fz);                                    // DBGMCU_APB1_FZ: Configure APB1 Peripheral Freeze Behavior
+[19:09:16.455]        // -> [Write32(0xE0042008, 0x00000000)]   (__dp=0x00000000, __ap=0x00000000)
+[19:09:16.455]      Write32(0xE004200C, DbgMCU_APB2_Fz);                                    // DBGMCU_APB1_FZ: Configure APB2 Peripheral Freeze Behavior
+[19:09:16.455]        // -> [Write32(0xE004200C, 0x00000000)]   (__dp=0x00000000, __ap=0x00000000)
+[19:09:16.455]    </block>
+[19:09:16.455]  </sequence>
+[19:09:16.455]  
